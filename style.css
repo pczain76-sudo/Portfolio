@@ -924,3 +924,113 @@ form textarea {
 html {
   scroll-behavior: smooth;
 }
+
+/* responsive design for mobile devices */
+@media (max-width: 412px){
+
+.header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: self-start;
+        padding: 15px 2px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .header .logo{
+        
+        font-size: 20px;
+        text-align: center;
+        animation:SlideRight 1s ease forwards;
+        opacity: 0;
+    }
+    @keyframes SlideRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.navbar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .navbar a{
+        margin-left: 0;
+        font-size: 16px;
+        padding: 5px;
+    }
+    .navbar a:hover {
+    color: #0ef;
+}
+.home{
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        height: auto;
+        padding: 120px 5% 50px;
+        background-image: url(home_mobile.png);
+        background-position: center;
+        background-size:cover;
+    }
+   .home-content{
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .home-content h3{
+        font-size: 22px;
+        line-height: 1.4;
+    }
+     .home-content h3:nth-child(2){
+        margin-bottom: 20px;
+    }
+
+    .home-content h1{
+        font-size: 38px;
+        line-height: 1.2;
+        margin: 10px 0;
+    }
+
+    .home-content p{
+        margin-top: 120px;
+        position: relative;
+        top:120px;
+        font-size: 16px;
+        line-height: 1.6;
+        padding: 0 10px;
+    }
+    .home-sci{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 20px;
+    }
+
+    .home-sci a{
+        position: relative;
+        top:110px;
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
+        margin: 0;
+    }
+     .btn-box{
+        padding: 10px 22px;
+        font-size: 14px;
+        border-radius: 30px;
+        margin-top: 20px;
+        position: relative;
+        top:110px;
+    }
+
+}
