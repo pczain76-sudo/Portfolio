@@ -1318,7 +1318,7 @@ html {
     }
     .contact-text{
         position: relative;
-        top:430px;
+        top:440px;
     }
     .contact-text h2{
         position: relative;
@@ -1328,6 +1328,14 @@ html {
         position: relative;
         bottom:200px;
         padding: 10px;
+    }
+    .showmessage{
+        position: static;
+        transform: none;
+        text-align: center;
+        font-size: 14px;
+        margin-top: 0;
+        color: #0ef;
     }
 .contact-form form input,
     .contact-form form textarea{
