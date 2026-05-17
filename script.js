@@ -44,5 +44,10 @@ form.addEventListener("submit", function(e){
 
 //    for checking
 
+const menu = document.querySelector(".menu-toggle");
+const navbar = document.querySelector(".navbar");
 
+menu.addEventListener("click", () => {
+    navbar.classList.toggle("active");
+});
 
