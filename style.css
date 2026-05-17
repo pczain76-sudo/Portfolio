@@ -928,9 +928,10 @@ html {
 /* responsive design for mobile devices */
 @media (max-width: 412px){
 
+    /* home section start here */
 .header{
     display: flex;
-    justify-content: flex-start;
+    justify-content:  center;
     align-items: self-start;
         padding: 15px 2px;
         flex-direction: column;
@@ -938,7 +939,7 @@ html {
     }
 
     .header .logo{
-        
+        margin-left: 150px;
         font-size: 20px;
         text-align: center;
         animation:SlideRight 1s ease forwards;
@@ -1033,4 +1034,297 @@ html {
         top:110px;
     }
 
+    /* about section start */
+
+      .about{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 40px 5%;
+        text-align: center;
+    }
+    .about-img img{
+        position: relative;
+        top:175px;
+        left:18px;
+        max-width: 100%;
+        width: 180px;
+        margin-left: 0;
+        margin-bottom: 20px;
+        padding-bottom: 0;
+    }
+    .about-text h2{
+        font-size: 38px;
+        position: relative;
+        bottom:130px;
+    }
+
+    .about-text h4{
+        position: relative;
+        bottom:135px;
+        font-size: 22px;
+        line-height: 1.5;
+        margin: 10px 0 20px;
+    }
+
+    .about-text p{
+        margin-top: 50px;
+        font-size: 16px;
+        line-height: 1.7;
+        margin-bottom: 2rem;
+        padding: 0;
+    }
+    .about-text .btn-box{
+        border-radius:30px ;
+        padding: 10px 22px;
+        font-size: 14px;
+        position: absolute;
+        top:1350px;
+        right: 130px;
+    }
+     /* now myservices section starts here */
+
+     .services{
+        font-size: 16px;
+        line-height: 1.6;
+        padding-bottom: 2rem;
+    }
+
+    .container_ser{
+        padding: 40px 20px;
+    }
+    .subtitle{
+        font-size: 38px;
+        padding-bottom: 30px;
+    }
+
+    .serv_list{
+        grid-template-columns: 1fr;
+        grid-gap: 25px;
+        margin-top: 30px;
+    }
+    .serv_list div{
+        padding: 25px;
+        font-size: 14px;
+        border-radius: 15px;
+    }
+
+    .serv_list div:hover{
+        transform: translateY(-5px);
+    }
+
+      .serv_list div i{
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+    .serv_list div h2{
+        font-size: 22px;
+        margin-bottom: 12px;
+    }
+
+    .serv_list div a{
+        font-size: 14px;
+        margin-top: 15px;
+    }
+    .read{
+        font-size: 14px;
+        padding: 10px 22px;
+        border-radius: 30px;
+    }
+
+    /* now skills section starts */
+
+    #myskills{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container1{
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        padding: 40px 20px;
+    }
+
+    .heading1{
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+      .bar{
+        font-size: 18px;
+    }
+
+    .techbars .bar{
+        margin: 20px 0;
+    }
+
+    .techbars .bar .info span{
+        font-size: 15px;
+    }
+     .techbars .bar .progress-line{
+        height: 4px;
+    }
+    .techbars .bar .progress-line span{
+        height: 100%;
+    }
+
+    .progress-line.html span{
+        width: 85%;
+    }
+
+    .progress-line.css span{
+        width: 65%;
+    }
+
+    .progress-line.js span{
+        width: 70%;
+    }
+
+    .progress-line.react span{
+        width: 45%;
+    }
+
+    .progress-line.bootstrap span{
+        width: 80%;
+    }
+    .radialbars{
+       display: grid;
+       grid-template-columns: repeat(2,1fr);
+    }
+
+    .radialbars .radialbar{
+        width: 100%;
+        height: 160px;
+        margin-bottom: 20px;
+    }
+
+    .radialbars .radialbar svg{
+        width: 110px;
+        height: 140px;
+    }
+
+    /* portfolio section starts here */
+
+    .maintext{
+        padding-top: 20px;
+        margin-top:20px;
+    }
+
+    .maintext h2{
+        font-size: 36px;
+        line-height: 1.2;
+    }
+.portfolio-content{
+        grid-template-columns: 1fr;
+        margin: 80px 20px;
+        gap: 20px;
+    }
+
+    .row img{
+        height: 300px;
+    }
+    
+    /* contact me section starts here */
+
+    .contact{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding-left: 10px;
+        margin-top: 80px;
+        align-items: center;
+       
+    }
+    .contact-text h2{
+      
+        font-size: 36px;
+        line-height: 1.2;
+        margin-bottom: 40px;
+    }
+
+    .contact-text h4{
+        font-size: 18px;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .contact-text p{
+        font-size: 16px;
+        line-height: 1.6;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+   .contact-list{
+        margin-bottom: 2rem;
+    }
+
+    .contact-list li{
+        margin-bottom: 8px;
+        font-size: 14px;
+        position: relative;
+        left:120px;
+    }
+
+    .contact-list i{
+        font-size: 18px;
+        margin-right: 8px;
+    }
+
+    .contact-icons{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .contact-icons i{
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
+        margin: 0;
+    }
+    .contact-form{
+        padding: 10px;
+    }
+.contact-form form input,
+    .contact-form form textarea{
+        width: 100%;
+        padding: 14px;
+        font-size: 14px;
+    }
+
+    .contact-form textarea{
+        height: 180px;
+    }
+    .contact-form .send{
+        font-size: 14px;
+        padding: 10px 30px;
+        border-radius: 30px;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    /* last text starts from here */
+
+ .last-text p{
+        font-size: 12px;
+        padding: 15px 10px;
+        margin-top: 40px;
+    }
+
+    .top{
+        bottom: 1rem;
+        right: 1rem;
+    }
+
+    .top i{
+        position: relative;
+        right:120px;
+        bottom:30px;
+        width: 20px;
+        height: 20px;
+        padding: 8px;
+        font-size: 12px;
+    }
 }
