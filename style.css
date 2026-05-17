@@ -1132,6 +1132,11 @@ html {
         padding: 25px;
         font-size: 14px;
         border-radius: 15px;
+       display: grid;
+       grid-template-columns: repeat(1fr);
+       justify-content: center;
+       align-items: center;
+       text-align: center;
     }
 
     .serv_list div:hover{
@@ -1156,7 +1161,9 @@ html {
         font-size: 14px;
         padding: 10px 22px;
         border-radius: 30px;
+       
     }
+
 
     /* now skills section starts */
 
@@ -1309,7 +1316,17 @@ html {
         font-size: 16px;
         margin: 0;
     }
+    .contact-text{
+        position: relative;
+        top:430px;
+    }
+    .contact-text h2{
+        position: relative;
+        bottom:370px;
+    }
     .contact-form{
+        position: relative;
+        bottom:200px;
         padding: 10px;
     }
 .contact-form form input,
